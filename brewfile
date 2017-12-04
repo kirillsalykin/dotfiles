@@ -1,0 +1,47 @@
+tap "homebrew/dupes"
+tap "caskroom/cask"
+tap "caskroom/fonts"
+tap "caskroom/versions"
+
+brew "zsh"
+brew "git"
+
+brew "services"
+
+brew "postgresql"
+brew "mysql"
+brew "redis"
+
+cask "java8"
+brew "clojure"
+brew "boot"
+brew "leiningen"
+
+tap "d12frosted/emacs-elus"
+
+brew "emacs-plus"
+
+cask "font-fira-code"
+
+cask "1password"
+cask "alfred"
+cask "appcleaner"
+cask "cyberduck"
+cask "daisydisk"
+cask "docker"
+cask "dropbox"
+cask "firefox"
+cask "google-chrome"
+cask "hammerspoon"
+cask "iterm2"
+cask "paw"
+cask "skype"
+cask "slack"
+cask "soulver"
+cask "spotify"
+cask "vlc"
+cask "the-unarchiver"
+cask "whatsapp"
+
+cask "sizeup"
+cask "tower"
