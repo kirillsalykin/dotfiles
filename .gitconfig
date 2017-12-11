@@ -1,0 +1,17 @@
+[alias]
+	glog = log --graph --abbrev-commit --decorate --all --format=format:\"%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(dim white) - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n %C(white)%s%C(reset)\"
+	please = push --force-with-lease
+	cian = commit --amend --no-edit
+[user]
+	name = Kirill Salykin
+	email = kirill.salykin@gmail.com
+[color]
+	ui = true
+[core]
+	quotepath = false
+[push]
+	default = current
+[rebase]
+	autosquash = true
+[rerere]
+	enabled = true
