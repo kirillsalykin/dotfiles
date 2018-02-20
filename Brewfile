@@ -21,8 +21,7 @@ brew "kafkacat"
 brew "nodejs"
 brew "yarn"
 
-tap "d12frosted/emacs-plus"
-brew "emacs-plus"
+cask "emacs"
 
 cask "font-fira-code"
 
