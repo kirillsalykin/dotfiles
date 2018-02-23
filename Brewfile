@@ -6,7 +6,11 @@ tap "caskroom/versions"
 
 brew "zsh"
 brew "git"
-brew "the_silver_searcher"
+brew "pt"
+brew "coreutils"
+
+cask "font-fira-code"
+cask "emacs"
 
 #brew "postgresql"
 #brew "mysql"
@@ -21,10 +25,6 @@ brew "kafkacat"
 brew "nodejs"
 brew "yarn"
 
-cask "emacs"
-
-cask "font-fira-code"
-
 cask "1password"
 cask "alfred"
 cask "appcleaner"
@@ -38,6 +38,7 @@ cask "iterm2"
 cask "paw"
 cask "postico"
 cask "rocket-chat"
+cask "rcdefaultapp"
 cask "sequel-pro"
 cask "skype"
 cask "slack"
