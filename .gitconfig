@@ -9,6 +9,7 @@
 	ui = true
 [core]
 	quotepath = false
+	excludesfile = "$HOME/.gitignore_global"
 [push]
 	default = current
 [rebase]
