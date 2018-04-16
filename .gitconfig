@@ -9,10 +9,11 @@
 	ui = true
 [core]
 	quotepath = false
-	excludesfile = "$HOME/.gitignore_global"
+	excludesfile = ~/.gitignore_global
 [push]
 	default = current
 [rebase]
 	autosquash = true
 [rerere]
 	enabled = true
+
