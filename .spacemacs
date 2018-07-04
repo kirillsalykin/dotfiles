@@ -68,7 +68,7 @@ This function should only modify configuration layer settings."
    dotspacemacs-frozen-packages '()
 
    ;; A list of packages that will not be installed and loaded.
-   dotspacemacs-excluded-packages '(counsel indent-guide ivy smartparens)
+   dotspacemacs-excluded-packages '(counsel indent-guide ivy fancy-battery smartparens)
 
    ;; Defines the behaviour of Spacemacs when installing packages.
    ;; Possible values are `used-only', `used-but-keep-unused' and `all'.
@@ -440,6 +440,13 @@ configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
   (setq create-lockfiles nil)
+
+  (spaceline-toggle-buffer-size-off)
+  (spaceline-toggle-minor-modes-off)
+  (spaceline-toggle-buffer-encoding-abbrev-off)
+  (spaceline-toggle-hud-off)
+  (spaceline-toggle-global-off)
+
   (add-hook 'clojure-mode-hook #'evil-cleverparens-mode)
 
   (setq highlight-indent-guides-method 'character)
