@@ -33,16 +33,7 @@ This function should only modify configuration layer settings."
 
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
-   '(html
-     ruby
-     sql
-     javascript
-     yaml
-     ;; ----------------------------------------------------------------
-     ;; Example of useful layers you may want to use right away.
-     ;; Uncomment some layer names and press `SPC f e R' (Vim style) or
-     ;; `M-m f e R' (Emacs style) to install them.
-     ;; ----------------------------------------------------------------
+   '(
      helm
      neotree
      auto-completion
@@ -55,11 +46,14 @@ This function should only modify configuration layer settings."
 
      org
 
-     markdown
-
-     emacs-lisp
      clojure
-     )
+     emacs-lisp
+     html
+     javascript
+     markdown
+     ruby
+     sql
+     yaml)
 
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
@@ -74,7 +68,7 @@ This function should only modify configuration layer settings."
    dotspacemacs-frozen-packages '()
 
    ;; A list of packages that will not be installed and loaded.
-   dotspacemacs-excluded-packages '(smartparens)
+   dotspacemacs-excluded-packages '(counsel ivy smartparens)
 
    ;; Defines the behaviour of Spacemacs when installing packages.
    ;; Possible values are `used-only', `used-but-keep-unused' and `all'.
