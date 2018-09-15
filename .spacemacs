@@ -448,9 +448,11 @@ before packages are loaded."
   (spaceline-toggle-global-off)
 
   (add-hook 'clojure-mode-hook #'evil-cleverparens-mode)
+  (setq cider-show-error-buffer 'except-in-repl)
+  (setq cider-invert-insert-eval-p t)
+  (setq cider-switch-to-repl-after-insert-p nil)
+  (setq cider-eval-toplevel-inside-comment-form t)
 
-  (setq highlight-indent-guides-method 'character)
-  (add-hook 'prog-mode-hook 'highlight-indent-guides-mode)
  )
 
 ;; Do not write anything past this comment. This is where Emacs will
