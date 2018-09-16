@@ -441,11 +441,6 @@ before packages are loaded."
 
   (setq-default evil-escape-key-sequence "jk")
 
-  (spaceline-toggle-buffer-size-off)
-  (spaceline-toggle-minor-modes-off)
-  (spaceline-toggle-buffer-encoding-abbrev-off)
-  (spaceline-toggle-hud-off)
-  (spaceline-toggle-global-off)
 
   (add-hook 'clojure-mode-hook #'evil-cleverparens-mode)
   (setq cider-show-error-buffer 'except-in-repl)
