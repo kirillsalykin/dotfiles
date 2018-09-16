@@ -47,4 +47,4 @@ cask "vlc"
 cask "the-unarchiver"
 cask "whatsapp"
 
-cask "tower"
+cask "tower@2"
