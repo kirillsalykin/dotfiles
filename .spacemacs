@@ -448,7 +448,13 @@ before packages are loaded."
   (setq cider-switch-to-repl-after-insert-p nil)
   (setq cider-eval-toplevel-inside-comment-form t)
 
-  ;; (lispy-set-key-theme '(lispy c-digits))
+  (evil-define-key 'insert 'global "(" 'lispy-parens)
+  (evil-define-key 'insert 'global "[" 'lispy-brackets)
+  (evil-define-key 'insert 'global "{" 'lispy-braces)
+  (evil-define-key 'normal 'global "\"" 'lispy-quotes)
+  (evil-define-key 'visual 'global "\"" 'lispy-quotes)
+  (evil-define-key 'insert 'global "\"" 'lispy-quotes)
+
   (lispyville-set-key-theme '(operators
                               text-objects
                               atom-motions
