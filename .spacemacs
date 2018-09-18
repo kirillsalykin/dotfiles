@@ -451,12 +451,12 @@ before packages are loaded."
   ;; (lispy-set-key-theme '(lispy c-digits))
   (lispyville-set-key-theme '(operators
                               text-objects
-                              motion
                               atom-motions
                               wrap
                               slurp/barf-cp
                               additional
                               additional-motions
+                              (additional-wrap normal visual insert)
                               additional-insert))
 
   (add-hook 'lisp-mode-hook #'lispyville-mode)
