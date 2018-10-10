@@ -450,25 +450,24 @@ before packages are loaded."
   (setq cider-switch-to-repl-after-insert-p nil)
   (setq cider-eval-toplevel-inside-comment-form t)
 
-  (evil-define-key 'insert 'global "(" 'lispy-parens)
-  (evil-define-key 'insert 'global "[" 'lispy-brackets)
-  (evil-define-key 'insert 'global "{" 'lispy-braces)
+  (add-hook 'lisp-mode-hook #'lispyville-mode)
+  (add-hook 'clojure-mode-hook #'lispyville-mode)
+  (add-hook 'cider-repl-mode-hook #'lispyville-mode)
+
+  (evil-define-key 'insert 'lispyville-mode "(" 'lispy-parens)
+  (evil-define-key 'insert 'lispyville-mode "[" 'lispy-brackets)
+  (evil-define-key 'insert 'lispyville-mode "{" 'lispy-braces)
   (evil-define-key 'normal 'global "\"" 'lispy-quotes)
   (evil-define-key 'visual 'global "\"" 'lispy-quotes)
   (evil-define-key 'insert 'global "\"" 'lispy-quotes)
 
-  (lispyville-set-key-theme '(operators
-                              text-objects
+  (lispyville-set-key-theme '(operators text-objects
                               wrap
                               slurp/barf-cp
                               additional
                               additional-motions
                               (additional-wrap normal visual insert)
                               additional-insert))
-
-  (add-hook 'lisp-mode-hook #'lispyville-mode)
-  (add-hook 'clojure-mode-hook #'lispyville-mode)
-  (add-hook 'cider-repl-mode-hook #'lispyville-mode)
  )
 
 ;; Do not write anything past this comment. This is where Emacs will
