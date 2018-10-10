@@ -459,7 +459,6 @@ before packages are loaded."
 
   (lispyville-set-key-theme '(operators
                               text-objects
-                              atom-motions
                               wrap
                               slurp/barf-cp
                               additional
