@@ -443,6 +443,8 @@ before packages are loaded."
 
   (setq-default evil-escape-key-sequence "jk")
 
+  (add-hook 'prog-mode-hook 'spacemacs/toggle-truncate-lines-on)
+
   (setq cider-show-error-buffer 'except-in-repl)
   (setq cider-invert-insert-eval-p t)
   (setq cider-switch-to-repl-after-insert-p nil)
