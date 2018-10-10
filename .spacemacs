@@ -468,6 +468,7 @@ before packages are loaded."
 
   (add-hook 'lisp-mode-hook #'lispyville-mode)
   (add-hook 'clojure-mode-hook #'lispyville-mode)
+  (add-hook 'cider-repl-mode-hook #'lispyville-mode)
  )
 
 ;; Do not write anything past this comment. This is where Emacs will
