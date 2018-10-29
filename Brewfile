@@ -9,6 +9,7 @@ brew "git"
 brew "coreutils"
 brew "wget"
 brew "ripgrep"
+brew "tree"
 
 cask "font-fira-code"
 cask "emacs"
