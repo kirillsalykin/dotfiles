@@ -10,6 +10,7 @@ brew "coreutils"
 brew "wget"
 brew "ripgrep"
 brew "tree"
+brew "watch"
 
 cask "font-fira-code"
 cask "emacs"
