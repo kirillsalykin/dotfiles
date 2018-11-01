@@ -12,6 +12,8 @@ brew "ripgrep"
 brew "tree"
 brew "watch"
 
+brew "awscli"
+
 cask "font-fira-code"
 cask "emacs"
 
