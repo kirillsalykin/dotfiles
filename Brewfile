@@ -1,4 +1,3 @@
-tap "homebrew/dupes"
 tap "homebrew/services"
 tap "caskroom/cask"
 tap "caskroom/fonts"
@@ -13,22 +12,21 @@ brew "tree"
 brew "watch"
 
 brew "awscli"
-
-cask "font-fira-code"
-cask "emacs"
-
-#brew "postgresql"
-#brew "mysql"
+brew "postgresql"
+brew "mysql"
 #brew "redis"
+#brew "kafkacat"
 
 cask "java8"
 brew "clojure"
 brew "boot-clj"
 brew "leiningen"
-brew "kafkacat"
 
 brew "nodejs"
 brew "yarn"
+
+cask "font-fira-code"
+cask "emacs"
 
 cask "1password"
 cask "alfred"
@@ -47,8 +45,7 @@ cask "skype"
 cask "slack"
 cask "spotify"
 cask "tableplus"
+cask "tower@2"
 cask "vlc"
 cask "the-unarchiver"
 cask "whatsapp"
-
-cask "tower@2"
