@@ -441,7 +441,8 @@ Put your configuration code here, except for variables that should be set
 before packages are loaded."
   (setq create-lockfiles nil)
 
-  (setq-default evil-escape-key-sequence "jk")
+  ;; (setq-default evil-escape-key-sequence "jk")
+  (global-set-key (kbd "C-g") 'evil-escape)
 
   (add-hook 'prog-mode-hook 'spacemacs/toggle-truncate-lines-on)
 
