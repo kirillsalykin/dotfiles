@@ -66,7 +66,16 @@ This function should only modify configuration layer settings."
    dotspacemacs-frozen-packages '()
 
    ;; A list of packages that will not be installed and loaded.
-   dotspacemacs-excluded-packages '(evil-unimpaired smartparens counsel counsel-projectile indent-guide ivy fancy-battery)
+   dotspacemacs-excluded-packages '(yasnippet
+                                    auto-yasnippet
+                                    yasnippet-snippets
+                                    evil-unimpaired
+                                    smartparens
+                                    ivy
+                                    counsel
+                                    counsel-projectile
+                                    indent-guide
+                                    fancy-battery)
 
    ;; Defines the behaviour of Spacemacs when installing packages.
    ;; Possible values are `used-only', `used-but-keep-unused' and `all'.
