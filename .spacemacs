@@ -49,7 +49,6 @@ This function should only modify configuration layer settings."
      html
      javascript
      markdown
-     ruby
      sql
      yaml)
 
@@ -60,10 +59,10 @@ This function should only modify configuration layer settings."
    ;; To use a local version of a package, use the `:location' property:
    ;; '(your-package :location "~/path/to/your-package/")
    ;; Also include the dependencies as they will not be resolved automatically.
-   dotspacemacs-additional-packages '(all-the-icons-install-fonts editorconfig lispy lispyville)
+   dotspacemacs-additional-packages '(editorconfig lispy lispyville)
 
    ;; A list of packages that cannot be updated.
-   dotspacemacs-frozen-packages '(cider)
+   dotspacemacs-frozen-packages '()
 
    ;; A list of packages that will not be installed and loaded.
    dotspacemacs-excluded-packages '(yasnippet
