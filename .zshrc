@@ -1,7 +1,7 @@
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="blinks"
 
-plugins=(brew git github lein)
+plugins=(git github lein)
 
 source $ZSH/oh-my-zsh.sh
 
