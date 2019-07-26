@@ -458,14 +458,16 @@ before packages are loaded."
 
   (doom-themes-treemacs-config)
 
-  (setq cider-show-error-buffer 'except-in-repl)
+  (setq cider-auto-select-error-buffer nil)
   (setq cider-invert-insert-eval-p t)
-  (setq cider-switch-to-repl-after-insert-p nil)
-  (setq cider-eval-toplevel-inside-comment-form t)
+  (setq cider-switch-to-repl-on-insert nil)
+  ;; (setq cider-eval-toplevel-inside-comment-form t)
 
   (add-hook 'lisp-mode-hook #'lispyville-mode)
   (add-hook 'clojure-mode-hook #'lispyville-mode)
   (add-hook 'cider-repl-mode-hook #'lispyville-mode)
+
+  (setq cider-clojure-cli-global-options "-A:dev:test")
 
   (evil-define-key 'insert 'lispyville-mode "(" 'lispy-parens)
   (evil-define-key 'insert 'lispyville-mode "[" 'lispy-brackets)
@@ -516,26 +518,7 @@ This function is called at the very end of Spacemacs initialization."
  '(package-selected-packages
    (quote
     (evil-matchit eshell-prompt-extras doom-modeline auto-compile markdown-mode projectile magit git-commit org-plus-contrib yaml-mode xterm-color ws-butler writeroom-mode with-editor winum which-key web-mode web-beautify volatile-highlights vi-tilde-fringe uuidgen use-package toc-org tagedit symon string-inflection sql-indent spaceline-all-the-icons smeargle slim-mode shrink-path shell-pop seeing-is-believing scss-mode sass-mode rvm ruby-tools ruby-test-mode ruby-refactor ruby-hash-syntax rubocop rspec-mode robe reveal-in-osx-finder restart-emacs rbenv rake rainbow-delimiters pug-mode prettier-js popwin persp-mode password-generator paradox packed overseer osx-trash osx-dictionary orgit org-projectile org-present org-pomodoro org-mime org-download org-bullets org-brain open-junk-file neotree nameless multi-term move-text mmm-mode minitest markdown-toc magit-svn magit-gitflow macrostep lorem-ipsum livid-mode lispyville link-hint launchctl json-navigator json-mode js2-refactor js-doc impatient-mode hungry-delete hl-todo highlight-parentheses highlight-numbers highlight-indentation helm-xref helm-themes helm-swoop helm-purpose helm-projectile helm-org-rifle helm-mode-manager helm-make helm-gitignore helm-git-grep helm-flx helm-descbinds helm-css-scss helm-company helm-c-yasnippet helm-ag google-translate golden-ratio gnuplot gitignore-templates gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link git-gutter-fringe git-gutter-fringe+ gh-md fuzzy font-lock+ flycheck-pos-tip flx-ido fill-column-indicator eyebrowse expand-region evil-visualstar evil-visual-mark-mode evil-tutor evil-surround evil-org evil-numbers evil-nerd-commenter evil-magit evil-lion evil-indent-plus evil-iedit-state evil-goggles evil-exchange evil-escape evil-ediff evil-cleverparens evil-args evil-anzu eshell-z esh-help emmet-mode elisp-slime-nav eldoc-eval editorconfig dumb-jump dotenv-mode doom-themes diminish diff-hl company-statistics column-enforce-mode clojure-snippets clojure-cheatsheet clean-aindent-mode cider-eval-sexp-fu centered-cursor-mode bundler browse-at-remote auto-highlight-symbol aggressive-indent ace-link ace-jump-helm-line ac-ispell)))
- '(pdf-view-midnight-colors (quote ("#b2b2b2" . "#292b2e")))
- '(safe-local-variable-values
-   (quote
-    ((cider-clojure-cli-global-options . "-A:dev:build:dev/build")
-     (cider-figwheel-main-default-options . ":dev")
-     (cider-default-cljs-repl . figwheel-main)
-     (cider-clojure-cli-global-options . "-A:dev")
-     (eval with-eval-after-load "clj-refactor"
-           (add-hook
-            (quote cider-connected-hook)
-            (function cider-sync-request:ns-load-all)))
-     (cljr-eagerly-build-asts-on-startup . t)
-     (cljr-populate-artifact-cache-on-startup . t)
-     (cljr-warn-on-eval)
-     (cljr-clojure-test-declaration . "[clojure.test :refer [deftest testing is]]")
-     (cljr-favor-prefix-notation)
-     (clojure-align-forms-automatically . t)
-     (cider-clojure-cli-global-options . "-A:dev:test")
-     (javascript-backend . tern)
-     (javascript-backend . lsp)))))
+ '(pdf-view-midnight-colors (quote ("#b2b2b2" . "#292b2e"))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
