@@ -5,6 +5,7 @@ tap "caskroom/versions"
 
 brew "awscli"
 brew "coreutils"
+brew "bat"
 brew "direnv"
 brew "git"
 brew "ripgrep"
