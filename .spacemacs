@@ -40,7 +40,6 @@ This function should only modify configuration layer settings."
      ;; neotree
      (treemacs :variables treemacs-use-follow-mode t)
 
-     org
      osx
      shell
      syntax-checking
