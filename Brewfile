@@ -57,7 +57,7 @@ cask "transmission"
 cask "vlc"
 cask "the-unarchiver"
 cask "whatsapp"
-
+cask "graalvm/tap/graalvm-ce"
 #cask "virtualbox"
 #cask "minikube"
 #cask "kubernetes-helm"
