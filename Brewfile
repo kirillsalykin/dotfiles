@@ -4,10 +4,10 @@ tap "caskroom/fonts"
 tap "caskroom/versions"
 
 brew "awscli"
-
 brew "bat"
 brew "cmake"
 brew "coreutils"
+brew "candid82/brew/joker"
 brew "direnv"
 brew "git"
 brew "libtool"
