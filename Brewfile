@@ -7,7 +7,6 @@ brew "awscli"
 brew "bat"
 brew "cmake"
 brew "coreutils"
-brew "candid82/brew/joker"
 brew "direnv"
 brew "git"
 brew "libtool"
@@ -30,6 +29,8 @@ brew "leiningen"
 
 brew "nodejs"
 brew "yarn"
+
+brew "borkdude/brew/clj-kondo"
 
 cask "font-fira-code"
 
