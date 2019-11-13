@@ -50,9 +50,10 @@ This function should only modify configuration layer settings."
      markdown
      multiple-cursors
      ;; org
-     ;; (shell :variables
-     ;;        shell-default-height 30
-     ;;        shell-default-position 'bottom)
+     (shell :variables
+            shell-default-shell 'vterm
+            shell-default-height 30
+            shell-default-position 'bottom)
      ;; spell-checking
      osx
      sql
