@@ -2,7 +2,7 @@ ZSH=$HOME/.oh-my-zsh
 # ZSH_THEME="blinks"
 ZSH_THEME="af-magic"
 
-plugins=(git github lein)
+plugins=(git github lein docker kubectl)
 
 ZDOTDIR=~/.cache/zsh
 
@@ -13,6 +13,5 @@ export LANGUAGE='en_US.UTF-8 git'
 
 export AWS_USER_NAME=kirill.salykin
 export AWS_VAULT_BACKEND=keychain
-
 
 eval "$(direnv hook zsh)"
