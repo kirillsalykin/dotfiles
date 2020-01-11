@@ -44,7 +44,8 @@ This function should only modify configuration layer settings."
               clojure-enable-linters 'clj-kondo)
      emacs-lisp
      git
-     helm
+     (helm :variables helm-no-header t
+                      helm-position 'top)
      html
      ;; lsp
      markdown
