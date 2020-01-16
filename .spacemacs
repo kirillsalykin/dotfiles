@@ -57,6 +57,7 @@ This function should only modify configuration layer settings."
             shell-default-position 'bottom)
      ;; spell-checking
      osx
+     restclient
      sql
      syntax-checking
      treemacs
