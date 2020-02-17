@@ -32,8 +32,8 @@ This function should only modify configuration layer settings."
 
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
-   '(
-     ;; ----------------------------------------------------------------
+    '(javascript
+       ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.
      ;; Uncomment some layer names and press `SPC f e R' (Vim style) or
      ;; `M-m f e R' (Emacs style) to install them.
@@ -42,11 +42,13 @@ This function should only modify configuration layer settings."
      better-defaults
      (clojure :variables
               clojure-enable-linters 'clj-kondo)
+     docker
      emacs-lisp
      git
      (helm :variables helm-no-header t
                       helm-position 'top)
      html
+     kubernetes
      ;; lsp
      markdown
      multiple-cursors
