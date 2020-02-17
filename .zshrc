@@ -14,4 +14,8 @@ export LANGUAGE='en_US.UTF-8 git'
 export AWS_USER_NAME=kirill.salykin
 export AWS_VAULT_BACKEND=keychain
 
+sops () {
+	aws-vault exec $AWS_PROFILE -- /usr/local/bin/sops $@
+}
+
 eval "$(direnv hook zsh)"
