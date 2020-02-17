@@ -494,7 +494,7 @@ before packages are loaded."
   (setq cider-auto-select-error-buffer nil)
   (setq cider-invert-insert-eval-p t)
   (setq cider-switch-to-repl-on-insert nil)
-  (setq cider-clojure-cli-global-options "-A:dev:test")
+  (setq cider-clojure-cli-global-options "-R:dev:test -C:dev:test")
 
   (add-hook 'lisp-mode-hook #'lispyville-mode)
   (add-hook 'clojure-mode-hook #'lispyville-mode)
