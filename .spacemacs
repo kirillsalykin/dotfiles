@@ -486,6 +486,7 @@ configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
   (setq create-lockfiles nil)
+  (setq enable-local-eval t)
 
   (add-hook 'prog-mode-hook 'spacemacs/toggle-truncate-lines-on)
 
