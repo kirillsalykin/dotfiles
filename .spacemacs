@@ -492,10 +492,19 @@ before packages are loaded."
   (doom-themes-treemacs-config)
 
   (setq cider-auto-select-error-buffer nil)
-  (setq cider-invert-insert-eval-p t)
-  (setq cider-switch-to-repl-on-insert nil)
   (setq cider-clojure-cli-global-options "-R:dev:test -C:dev:test")
+  ;;(setq cider-invert-insert-eval-p t)
+  (setq cider-overlays-use-font-lock t)
+  (setq cider-prompt-for-symbol nil)
+  (setq cider-repl-pop-to-buffer-on-connect 'display-only)
+  (setq cider-result-overlay-position 'at-point)
+  (setq cider-save-file-on-load t)
+  (setq cider-show-error-buffer 'except-in-repl)
+  (setq cider-special-mode-truncate-lines nil)
+  ;; (setq cider-switch-to-repl-on-insert nil)
+
   (setq clojure-toplevel-inside-comment-form 't)
+  (setq nrepl-hide-special-buffers t)
 
   (add-hook 'lisp-mode-hook #'lispyville-mode)
   (add-hook 'clojure-mode-hook #'lispyville-mode)
