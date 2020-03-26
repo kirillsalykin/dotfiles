@@ -495,6 +495,7 @@ before packages are loaded."
   (setq cider-invert-insert-eval-p t)
   (setq cider-switch-to-repl-on-insert nil)
   (setq cider-clojure-cli-global-options "-R:dev:test -C:dev:test")
+  (setq clojure-toplevel-inside-comment-form 't)
 
   (add-hook 'lisp-mode-hook #'lispyville-mode)
   (add-hook 'clojure-mode-hook #'lispyville-mode)
