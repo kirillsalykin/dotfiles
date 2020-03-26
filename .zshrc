@@ -19,3 +19,6 @@ sops () {
 }
 
 eval "$(direnv hook zsh)"
+
+alias lemonpi="cd ~/projects/lemonpi"
+alias linfra="cd ~/projects/lemonpi/lemonpi-infra"
