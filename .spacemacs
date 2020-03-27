@@ -528,8 +528,4 @@ before packages are loaded."
   (evil-define-key 'normal 'global "\"" 'lispy-quotes)
   (evil-define-key 'visual 'global "\"" 'lispy-quotes)
   (evil-define-key 'insert 'global "\"" 'lispy-quotes)
-
   )
-
-;; Do not write anything past this comment. This is where Emacs will
-;; auto-generate custom variable definitions.
