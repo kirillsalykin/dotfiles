@@ -488,11 +488,7 @@ configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
   (setq create-lockfiles nil)
-  (setq enable-local-eval t)
-
-  (add-hook 'prog-mode-hook 'spacemacs/toggle-truncate-lines-on)
-
-  (doom-themes-treemacs-config)
+  (setq enable-local-variables 'all)
 
   (setq cider-auto-select-error-buffer nil)
   (setq cider-clojure-cli-global-options "-R:dev:test -C:dev:test")
@@ -509,9 +505,14 @@ before packages are loaded."
   (setq clojure-toplevel-inside-comment-form 't)
   (setq nrepl-hide-special-buffers t)
 
+  (setq magit-save-repository-buffers 'dontask)
+
+  (add-hook 'prog-mode-hook 'spacemacs/toggle-truncate-lines-on)
   (add-hook 'lisp-mode-hook #'lispyville-mode)
   (add-hook 'clojure-mode-hook #'lispyville-mode)
   (add-hook 'cider-repl-mode-hook #'lispyville-mode)
+
+  (doom-themes-treemacs-config)
 
   (lispyville-set-key-theme '(operators
                               text-objects
