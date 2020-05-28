@@ -32,7 +32,8 @@ This function should only modify configuration layer settings."
 
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
-    '(javascript
+    '(react
+      javascript
        ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.
      ;; Uncomment some layer names and press `SPC f e R' (Vim style) or
@@ -488,10 +489,13 @@ configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
   (setq create-lockfiles nil)
-  (setq enable-local-variables 'all)
+  (setq enable-local-variables :all)
+
+  (setq evil-want-Y-yank-to-eol t)
 
   (setq cider-auto-select-error-buffer nil)
   (setq cider-clojure-cli-global-options "-R:dev:test -C:dev:test")
+  ;; (setq cider-shadow-cljs-command "clojure -A:frontend clj-repl")
   ;;(setq cider-invert-insert-eval-p t)
   (setq cider-overlays-use-font-lock t)
   (setq cider-prompt-for-symbol nil)
