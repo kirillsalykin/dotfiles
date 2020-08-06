@@ -33,10 +33,5 @@ fi
 
 eval "$(direnv hook zsh)"
 
-sops () {
-  aws-vault exec $AWS_PROFILE -- /usr/local/bin/sops $@
-}
-
-
 alias lemonpi="cd ~/projects/lemonpi"
 alias linfra="cd ~/projects/lemonpi/lemonpi-infra"
