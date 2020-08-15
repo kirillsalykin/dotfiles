@@ -24,7 +24,7 @@ brew "postgresql"
 #brew "kafkacat"
 
 cask "adoptopenjdk11"
-brew "clojure"
+brew "clojure/tools/clojure"
 #brew "boot-clj"
 brew "leiningen"
 brew "borkdude/brew/clj-kondo"
