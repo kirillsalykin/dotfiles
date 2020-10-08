@@ -66,6 +66,9 @@ This function should only modify configuration layer settings."
      syntax-checking
      treemacs
      version-control
+     (unicode-fonts :variables
+                    unicode-fonts-enable-ligatures t
+                    unicode-fonts-ligature-modes '(prog-mode))
      yaml
      )
 
