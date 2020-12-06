@@ -80,7 +80,7 @@ This function should only modify configuration layer settings."
    ;; To use a local version of a package, use the `:location' property:
    ;; '(your-package :location "~/path/to/your-package/")
    ;; Also include the dependencies as they will not be resolved automatically.
-   dotspacemacs-additional-packages '(editorconfig lispyville direnv)
+    dotspacemacs-additional-packages '(editorconfig lispyville direnv ivy-posframe)
 
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages '(unicode-fonts)
@@ -498,8 +498,8 @@ before packages are loaded."
 
   (setq evil-want-Y-yank-to-eol t)
 
-  ;; (setq ivy-posframe-display-functions-alist '((t . ivy-posframe-display-at-window-center)))
-  ;; (ivy-posframe-mode 1)
+  (setq ivy-posframe-display-functions-alist '((t . ivy-posframe-display-at-window-center)))
+  (ivy-posframe-mode 1)
 
   (direnv-mode)
 
