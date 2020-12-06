@@ -43,6 +43,7 @@ This function should only modify configuration layer settings."
      better-defaults
      (clojure :variables
               clojure-enable-linters 'clj-kondo)
+     (ibuffer :variables ibuffer-group-buffers-by 'projects)
      docker
      emacs-lisp
      git
@@ -66,9 +67,9 @@ This function should only modify configuration layer settings."
      syntax-checking
      treemacs
      version-control
-     (unicode-fonts :variables
-                    unicode-fonts-enable-ligatures t
-                    unicode-fonts-ligature-modes '(prog-mode))
+     ;; (unicode-fonts :variables
+     ;;               unicode-fonts-enable-ligatures t
+     ;;               unicode-fonts-ligature-modes '(prog-mode))
      yaml
      )
 
@@ -79,10 +80,10 @@ This function should only modify configuration layer settings."
    ;; To use a local version of a package, use the `:location' property:
    ;; '(your-package :location "~/path/to/your-package/")
    ;; Also include the dependencies as they will not be resolved automatically.
-   dotspacemacs-additional-packages '(editorconfig lispyville ivy-posframe)
+   dotspacemacs-additional-packages '(editorconfig lispyville direnv)
 
    ;; A list of packages that cannot be updated.
-   dotspacemacs-frozen-packages '()
+   dotspacemacs-frozen-packages '(unicode-fonts)
 
    ;; A list of packages that will not be installed and loaded.
    dotspacemacs-excluded-packages '(yasnippet
@@ -497,9 +498,10 @@ before packages are loaded."
 
   (setq evil-want-Y-yank-to-eol t)
 
-  (setq ivy-posframe-display-functions-alist '((t . ivy-posframe-display-at-window-center)))
-  (ivy-posframe-mode 1)
+  ;; (setq ivy-posframe-display-functions-alist '((t . ivy-posframe-display-at-window-center)))
+  ;; (ivy-posframe-mode 1)
 
+  (direnv-mode)
 
   (setq cider-auto-select-error-buffer nil)
   (setq cider-clojure-cli-global-options "-R:dev:test -C:dev:test")
