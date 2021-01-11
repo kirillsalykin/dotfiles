@@ -67,9 +67,9 @@ This function should only modify configuration layer settings."
      syntax-checking
      treemacs
      version-control
-     ;; (unicode-fonts :variables
-     ;;               unicode-fonts-enable-ligatures t
-     ;;               unicode-fonts-ligature-modes '(prog-mode))
+     (unicode-fonts :variables
+                    unicode-fonts-enable-ligatures t
+                    unicode-fonts-ligature-modes '(prog-mode))
      yaml
      )
 
@@ -83,7 +83,7 @@ This function should only modify configuration layer settings."
     dotspacemacs-additional-packages '(editorconfig lispyville direnv ivy-posframe)
 
    ;; A list of packages that cannot be updated.
-   dotspacemacs-frozen-packages '(unicode-fonts)
+   dotspacemacs-frozen-packages '()
 
    ;; A list of packages that will not be installed and loaded.
    dotspacemacs-excluded-packages '(yasnippet
