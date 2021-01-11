@@ -498,6 +498,7 @@ before packages are loaded."
 
   (setq evil-want-Y-yank-to-eol t)
 
+  (add-hook 'projectile-after-switch-project-hook 'treemacs-display-current-project-exclusively)
 
   (direnv-mode)
 
