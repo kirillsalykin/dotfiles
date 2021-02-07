@@ -503,8 +503,7 @@ before packages are loaded."
   (direnv-mode)
 
   (setq cider-auto-select-error-buffer nil)
-  (setq cider-clojure-cli-global-options "-R:dev:test -C:dev:test")
-  ;; (setq cider-shadow-cljs-command "clojure -A:frontend clj-repl")
+  (setq cider-clojure-cli-aliases "-A:dev:test")
   ;;(setq cider-invert-insert-eval-p t)
   (setq cider-overlays-use-font-lock t)
   (setq cider-prompt-for-symbol nil)
