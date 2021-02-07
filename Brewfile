@@ -27,6 +27,7 @@ cask "adoptopenjdk11"
 brew "clojure/tools/clojure"
 #brew "boot-clj"
 brew "leiningen"
+brew "clojure-lsp"
 brew "borkdude/brew/clj-kondo"
 
 brew "nodejs"
