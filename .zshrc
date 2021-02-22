@@ -33,5 +33,5 @@ fi
 
 eval "$(direnv hook zsh)"
 
-alias lemonpi="cd ~/projects/lemonpi"
-alias linfra="cd ~/projects/lemonpi/lemonpi-infra"
+alias flux-prod-eu="cd ~/projects/lemonpi/lemonpi-infra/flux/prod/eu-west-1-kube-02"
+alias flux-test-eu="cd ~/projects/lemonpi/lemonpi-infra/flux/test/eu-west-1-kube-02"
