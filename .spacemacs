@@ -41,7 +41,7 @@ This function should only modify configuration layer settings."
      ;; ----------------------------------------------------------------
      auto-completion
      better-defaults
-     (clojure :variables clojure-backend 'lsp
+     (clojure :variables ;; clojure-backend 'lsp
                          clojure-enable-linters 'clj-kondo)
      (ibuffer :variables ibuffer-group-buffers-by 'projects)
      docker
@@ -52,7 +52,7 @@ This function should only modify configuration layer settings."
      ;;                 helm-position 'top)
      html
      kubernetes
-     lsp
+     ;; lsp
      markdown
      multiple-cursors
      ;; org
