@@ -15,3 +15,5 @@ Thumbs.db
 
 .lsp
 .clj-kondo
+.cpcache
+target
