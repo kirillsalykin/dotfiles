@@ -518,6 +518,8 @@ before packages are loaded."
   ;; (setq cider-switch-to-repl-on-insert nil)
 
   (setq clojure-toplevel-inside-comment-form 't)
+  (setq clojure-align-forms-automatically f)
+
   (setq nrepl-hide-special-buffers t)
 
   (setq magit-save-repository-buffers 'dontask)

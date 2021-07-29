@@ -2,6 +2,8 @@ tap "homebrew/services"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "adoptopenjdk/openjdk"
+#tap "johanhaleby/kubetail"
+
 
 brew "awscli"
 brew "cmake"
@@ -18,23 +20,19 @@ brew "wget"
 brew "yarn"
 brew "zsh"
 
-brew "postgresql"
+#brew "postgresql"
 #brew "mysql"
 #brew "redis"
 #brew "kafkacat"
+#brew "kubetail"
 
 cask "adoptopenjdk11"
 brew "clojure/tools/clojure"
 #brew "boot-clj"
 brew "leiningen"
-brew "clojure-lsp"
 brew "borkdude/brew/clj-kondo"
 
 brew "nodejs"
-brew "yarn"
-
-## ghg
-brew "linkerd"
 
 cask "font-fira-code"
 
