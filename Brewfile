@@ -23,8 +23,10 @@ brew "zsh"
 tap "adoptopenjdk/openjdk"
 cask "adoptopenjdk11"
 
+tap "clojure/tools"
 brew "clojure/tools/clojure"
 brew "leiningen"
+tap "borkdude/brew"
 brew "borkdude/brew/clj-kondo"
 
 brew "nodejs"
