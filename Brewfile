@@ -5,6 +5,7 @@ cask "font-fira-code"
 
 tap "homebrew/cask-versions"
 
+brew "cmake"
 brew "direnv"
 brew "git"
 brew "jq"
