@@ -33,5 +33,5 @@ fi
 
 eval "$(direnv hook zsh)"
 
-alias flux-prod-eu="cd ~/projects/lemonpi/lemonpi-infra/flux/prod/eu-west-1-kube-02"
-alias flux-test-eu="cd ~/projects/lemonpi/lemonpi-infra/flux/test/eu-west-1-kube-02"
+source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"

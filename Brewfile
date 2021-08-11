@@ -20,6 +20,8 @@ brew "zsh"
 #tap "johanhaleby/kubetail"
 #brew "kubetail"
 
+cask "google-cloud-sdk"
+
 tap "adoptopenjdk/openjdk"
 cask "adoptopenjdk11"
 
