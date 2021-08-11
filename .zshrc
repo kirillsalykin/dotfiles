@@ -31,6 +31,9 @@ if [[ "$INSIDE_EMACS" = 'vterm' ]]; then
   alias clear='vterm_printf "51;Evterm-clear-scrollback";tput clear'
 fi
 
+alias k='HTTP_PROXY=localhost:8888 kubectl'
+
+
 eval "$(direnv hook zsh)"
 
 source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
