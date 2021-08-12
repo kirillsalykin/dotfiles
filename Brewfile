@@ -21,6 +21,7 @@ brew "zsh"
 #tap "johanhaleby/kubetail"
 #brew "kubetail"
 
+brew "helm"
 cask "google-cloud-sdk"
 
 tap "adoptopenjdk/openjdk"
@@ -33,6 +34,8 @@ tap "borkdude/brew"
 brew "borkdude/brew/clj-kondo"
 
 brew "nodejs"
+
+cask "keybase"
 
 cask "1password"
 cask "alfred"
