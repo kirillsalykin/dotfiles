@@ -13,7 +13,34 @@
 ehthumbs.db
 Thumbs.db
 
+# Emacs #
+#########
 .lsp
+
+
+# JVM #
+#######
+*.class
+target/
+
+# Clojure #
+###########
 .clj-kondo
 .cpcache
-target
+
+# Scala #
+#########
+# bloop and metals
+.bloop
+.bsp
+
+# metals
+project/metals.sbt
+.metals
+
+# scala 3
+.tasty
+
+# sbt
+project/project/
+project/target/
