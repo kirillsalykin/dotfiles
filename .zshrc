@@ -2,7 +2,7 @@ ZSH=$HOME/.oh-my-zsh
 # ZSH_THEME="blinks"
 ZSH_THEME="af-magic"
 
-plugins=(git github lein docker kubectl)
+plugins=(brew direnv docker gcloud git helm history kubectl)
 
 ZDOTDIR=~/.cache/zsh
 
@@ -10,9 +10,6 @@ source $ZSH/oh-my-zsh.sh
 
 export GREP_OPTIONS="--color=auto"
 export LANGUAGE='en_US.UTF-8 git'
-
-export AWS_USER_NAME=kirill.salykin
-export AWS_VAULT_BACKEND=keychain
 
 function vterm_printf(){
   if [ -n "$TMUX" ]; then
@@ -31,10 +28,7 @@ if [[ "$INSIDE_EMACS" = 'vterm' ]]; then
   alias clear='vterm_printf "51;Evterm-clear-scrollback";tput clear'
 fi
 
-alias k='HTTP_PROXY=localhost:8888 kubectl'
-
-
-eval "$(direnv hook zsh)"
-
+source $HOME/private.sh
 source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
 source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
+export PATH="/usr/local/opt/libpq/bin:$PATH"
