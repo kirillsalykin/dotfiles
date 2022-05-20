@@ -32,17 +32,19 @@ This function should only modify configuration layer settings."
 
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
-    '(react
+    '(csv
+      react
       javascript
-       ;; ----------------------------------------------------------------
+      ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.
      ;; Uncomment some layer names and press `SPC f e R' (Vim style) or
      ;; `M-m f e R' (Emacs style) to install them.
      ;; ----------------------------------------------------------------
      auto-completion
      better-defaults
-     (clojure :variables ;; clojure-backend 'lsp
-                         clojure-enable-linters 'clj-kondo)
+     ;; (clojure :variables clojure-backend 'lsp
+     ;;                     clojure-enable-linters 'clj-kondo)
+     scala
      (ibuffer :variables ibuffer-group-buffers-by 'projects)
      docker
      emacs-lisp
@@ -50,6 +52,7 @@ This function should only modify configuration layer settings."
      ivy
      ;;(helm :variables helm-no-header t
      ;;                 helm-position 'top)
+     haskell
      html
      kubernetes
      ;; lsp
@@ -63,6 +66,9 @@ This function should only modify configuration layer settings."
      ;; spell-checking
      osx
      restclient
+     ;; (ranger :variables
+     ;;         ranger-override-dired 'ranger
+     ;;         ranger-show-preview t)
      sql
      syntax-checking
      treemacs
