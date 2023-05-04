@@ -4,4 +4,6 @@ ln -nfs "$(pwd)/.zshrc"             "$HOME/.zshrc"
 ln -nfs "$(pwd)/.editorconfig"      "$HOME/.editorconfig"
 ln -nfs "$(pwd)/nvchad.custom"      "$HOME/.config/nvim/lua/custom"
 
+source ./osx
+
 # ln -nfs "$(pwd)/.spacemacs"         "$HOME/.spacemacs"
