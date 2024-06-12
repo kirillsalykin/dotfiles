@@ -6,24 +6,28 @@ tap "homebrew/cask-versions"
 
 #cask "logi-options-plus"
 
-#brew "cmake"
 brew "direnv"
 brew "git"
 brew "jq"
 brew "fd"
 brew "neovim"
 brew "ripgrep"
+brew "sops"
 brew "tree"
 brew "watch"
 brew "wget"
 brew "zsh"
 
-brew "go"
+brew kubectl
+brew kubectx
+brew kubeens
+
 brew "rustup-init"
 
-#cask "google-cloud-sdk"
-
-cask "temurin17"
+cask "google-cloud-sdk"
+brew "awscli"
+brew "openjdk@21"
+cask "cljstyle"
 
 tap "clojure/tools"
 brew "clojure/tools/clojure"
@@ -31,7 +35,7 @@ brew "clojure/tools/clojure"
 #brew "clojure-lsp/brew/clojure-lsp-native"
 tap "borkdude/brew"
 brew "borkdude/brew/clj-kondo"
-#brew "borkdude/brew/babashka"
+brew "borkdude/brew/babashka"
 
 brew "nodejs"
 
@@ -44,7 +48,7 @@ cask "dropbox"
 cask "google-chrome"
 cask "kitty"
 #cask "iterm2"
-cask "ticktick"
+#cask "ticktick"
 cask "paw"
 cask "raycast"
 cask "skype"
@@ -57,4 +61,3 @@ cask "transmission"
 cask "vlc"
 cask "the-unarchiver"
 cask "whatsapp"
-cask "zed"
