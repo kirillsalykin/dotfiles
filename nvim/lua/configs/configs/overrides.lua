@@ -1,7 +1,7 @@
 local M = {}
 
 M.telescope = {
-  extensions_list = { "themes", "terms" },
+  extensions_list = { "themes", "terms", "lsp_handlers" },
   defaults = {
     mappings = {
       i = {
@@ -19,12 +19,19 @@ M.treesitter = {
     "lua",
     "html",
     "css",
+    "sql",
     "clojure",
     "rust",
     "javascript",
     "typescript",
     "tsx",
     "c",
+    "markdown",
+    "markdown_inline",
+    "yaml",
+    "json",
+    "json5",
+    "jsonc"
   },
 }
 
@@ -38,7 +45,10 @@ M.mason = {
     "css-lsp",
     "html-lsp",
     "typescript-language-server",
-    "deno",
+    "rescript-lsp",
+
+    "clojure-lsp"
+
   },
 }
 
