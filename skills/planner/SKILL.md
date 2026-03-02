@@ -74,6 +74,9 @@ For every task output exactly these fields:
 
 No extra fields.
 
+Commit message rule:
+- commit must be short but descriptive, following the “imperative, concise subject” guidance from https://cbea.ms/git-commit/
+
 # Plan output
 When the plan is complete, output:
 1) tasks: the ordered list of tasks in the format above
