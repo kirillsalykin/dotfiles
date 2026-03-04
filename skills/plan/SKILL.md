@@ -18,7 +18,8 @@ Activate only when the user explicitly asks for a plan or execution plan.
 
 - Prefer upstream input from a PRD included in the prompt or stored as `prd.md` in the repository root.
 - If the PRD contains requirement IDs (`FR-*`, `NFR-*`, `AC-*`), preserve traceability:
-  - reference covered IDs in each task `goal` and `DoD` (example: `Covers: FR-003, AC-007`).
+  - reference covered IDs in each task `goal` (example: `Covers: FR-003, AC-007`).
+  - add traceability to `DoD` only when it is machine-verifiable.
 - Do not invent product behavior outside PRD scope unless required to keep the repository runnable or backward-compatible.
   - If unavoidable, record the assumption explicitly in `summary`.
 
@@ -206,7 +207,7 @@ Rules:
 - `context`: explicit relative-path allowlist of files/directories to inspect or edit
 - `steps`: exact ordered mechanical steps (no code)
 - `bounds`: explicit files/components/behaviors that must remain unchanged
-- `DoD`: objective checks validating only this task; include requirement traceability when PRD IDs exist
+- `DoD`: objective checks validating only this task
 - `commit`: imperative, concise commit message
 - `push`: exact command(s) to push
 - `rollback`: one concrete rollback action limited to this task
@@ -223,3 +224,6 @@ If you cannot write this honestly, split the task.
 - Validate only this task.
 - Do not include unrelated checks.
 - Do not defer core verification to a final aggregate task.
+- Every DoD line must be an executable assertion with a meaningful pass/fail outcome.
+- Forbid no-op/declarative DoD lines that can pass without validating behavior (for example standalone `echo`, `printf`, `cat`, `true`, `:`).
+- When PRD IDs exist, keep traceability in `goal` (required). Add traceability to `DoD` only if it is machine-verifiable (for example `jq`/`grep` assertions), never as plain text output.
