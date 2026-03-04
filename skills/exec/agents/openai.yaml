@@ -1,0 +1,4 @@
+interface:
+  display_name: "Exec"
+  short_description: "Execute one plan.json task exactly as written"
+  default_prompt: "Execute the next task from plan.json with strict context boundaries."

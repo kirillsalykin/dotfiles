@@ -99,6 +99,17 @@ You **MUST** follow this exact structure for the output:
 - **Phased Rollout**: MVP -> v1.1 -> v2.0.
 - **Technical Risks**: Latency, cost, or dependency failures.
 
+### 6. Planning Handoff (Required for `prd -> plan -> execute`)
+
+- **Output Artifact**: Produce the PRD as Markdown intended for `prd.md`.
+- **In-Scope Requirements**: Numbered `FR-*` list (for example `FR-001`) with concrete expected behavior.
+- **Non-Functional Requirements**: Numbered `NFR-*` list (performance, security, reliability, compliance).
+- **Acceptance Criteria Catalog**: Numbered `AC-*` list with measurable pass/fail checks.
+- **Out of Scope**: Numbered `OOS-*` list (explicit non-goals).
+- **Constraints & Assumptions**: Technical constraints, deadlines, dependencies, plus explicitly marked assumptions.
+- **Open Questions / Decisions Needed**: Numbered `Q-*` list blocking accurate planning.
+- **Traceability**: Map each user story to related `FR-*` and `AC-*` IDs.
+
 ---
 
 ## Implementation Guidelines
@@ -107,6 +118,7 @@ You **MUST** follow this exact structure for the output:
 
 - **Define Testing**: For AI systems, specify how to test and validate output quality.
 - **Iterate**: Present a draft and ask for feedback on specific sections.
+- **Use Stable IDs**: Keep `FR-*`, `NFR-*`, `AC-*`, `OOS-*`, and `Q-*` identifiers stable across revisions.
 
 ### DON'T (Avoid)
 

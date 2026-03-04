@@ -1,0 +1,4 @@
+interface:
+  display_name: "Plan"
+  short_description: "Create deterministic plan.json execution plans"
+  default_prompt: "Build a deterministic plan.json for this repository and request."
